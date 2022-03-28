@@ -1,0 +1,20 @@
+name: ls-lint
+
+on:
+  push:
+
+jobs:
+  validate:
+    name: "validate"
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Check out a copy of the repository
+        uses: actions/checkout@v2
+
+      - name: Install ls-lint from NPM
+        run: npm install -g @ls-lint/ls-lint
+
+      - name: Check whether the file names are consistent
+        run: ls-lint # uses .ls-lint.yml
+        
