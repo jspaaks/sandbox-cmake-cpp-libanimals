@@ -13,4 +13,4 @@ target_include_directories(
     ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
-include(cmake/testing.cmake)
+include(${CMAKE_CURRENT_SOURCE_DIR}/cmake/testing.cmake)
