@@ -1,3 +1,0 @@
-[submodule "external/libshapes"]
-	path = external/libshapes
-	url = https://github.com/jspaaks/sandbox-cmake-cpp-libshapes
